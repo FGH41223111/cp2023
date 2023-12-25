@@ -372,6 +372,20 @@ void draw_japan_flag(gdImagePtr img) {
 void draw_circle(gdImagePtr img, int x, int y, int radius, int color) {
     gdImageFilledEllipse(img, x, y, radius * 2, radius * 2, color);
 }</pre>
+<p>replit.nix必要的繪圖程式:</p>
+<pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">{ pkgs }: {
+    deps = [
+      pkgs.libev
+      pkgs.gnuplot
+      pkgs.ncurses.dev
+      pkgs.gd
+    ];
+  env = {
+    PYTHON_LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
+      pkgs.libev
+    ];
+  };
+}</pre>
 <h1>file</h1>
 <p></p>
 <p></p>
