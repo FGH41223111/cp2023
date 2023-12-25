@@ -12,7 +12,12 @@
 <p>日本國旗</p>
 <p><img alt="" height="400" src="/images/japan_flag.png" width="600"/></p>
 <h1>Program</h1>
-<p>單曲線圖</p>
+<p></p>
+<p><span></span></p>
+<p><span>程式</span>對應圖片(建議是輸入的文件名稱)</p>
+<p></p>
+<p></p>
+<p>單曲線圖<span>(</span><span>gnuolot_ex1</span><span>.c)</span></p>
 <pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">// 包含標準輸出入程式庫的標頭文件
 // https://blog.csdn.net/weixin_38468077/article/details/101069365
 // http://www.gnuplot.info/demo/
@@ -56,7 +61,7 @@ int main() {
 
     return 0;
 }</pre>
-<p>雙曲線圖</p>
+<p>雙曲線圖<span>(</span><span>gnuolot_ex2</span><span>.c)</span></p>
 <pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 
 int main() {
@@ -108,7 +113,7 @@ int main() {
 
     return 0;
 }</pre>
-<p><span>臺灣國旗</span></p>
+<p><span>臺灣國旗(<span>gd_roc_flag</span><span>.c)</span></span></p>
 <pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">// https://en.wikipedia.org/wiki/Flag_of_the_Republic_of_China
 // 內政部國旗參考資料: https://www.moi.gov.tw/cp.aspx?n=10621
 // cc roc_flag_in_gd.c -lgd -lm to link with gd and math library
@@ -231,7 +236,7 @@ gdImageFilledPolygon(img, points, 4, color);
 gdImagePolygon(img, points, 4, color);
 }
 }</pre>
-<p><span>美國國旗</span></p>
+<p><span>美國國旗(<span>gd_usa_flag</span><span>.c)</span></span></p>
 <pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 #include &lt;gd.h&gt;
 #include &lt;math.h&gt;
@@ -320,7 +325,7 @@ void draw_star(gdImagePtr img, int x, int y, int size, int color, double rotatio
     // 用指定的颜色填充星星
     gdImageFilledPolygon(img, points, 10, color);
 }</pre>
-<p>日本國旗</p>
+<p>日本國旗(<span>gd_jp_flag</span><span>.c)</span></p>
 <pre class="brush:csharp;auto-links:false;toolbar:false" contenteditable="false">#include &lt;stdio.h&gt;
 #include &lt;gd.h&gt;
 #include &lt;math.h&gt;
@@ -393,15 +398,12 @@ void draw_circle(gdImagePtr img, int x, int y, int radius, int color) {
 <p><span class="Y2IQFc" lang="zh-TW">在這個命令中： <span>文件名</span>稱.c 是你的 C 語言原始碼檔案的名稱</span></p>
 <p><span class="Y2IQFc" lang="zh-TW"> -lgd 和 -lm 分別指定連結 GD 圖形庫和數學庫</span></p>
 <p><span class="Y2IQFc" lang="zh-TW">最後再打<span>./a.out</span></span></p>
-<pre class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" data-ved="2ahUKEwjem5zhpauDAxVsh1YBHW7DCN0Q3ewLegQICBAQ" dir="ltr" id="tw-target-text"><span class="Y2IQFc" lang="zh-TW">運行這個可執行文件<br/><br/></span></pre>
+<pre class="tw-data-text tw-text-large tw-ta" data-placeholder="翻譯" data-ved="2ahUKEwjem5zhpauDAxVsh1YBHW7DCN0Q3ewLegQICBAQ" dir="ltr" id="tw-target-text"><span class="Y2IQFc" lang="zh-TW">運行這個可執行文件<br/></span></pre>
 <p>例:</p>
 <p><span>cd downloads</span></p>
 <p><span>cc gd_jp_flag<span>.c -lgd -lm</span></span></p>
 <p><span>./a.out</span></p>
 <p><span>這樣就可以繪製出圖片了</span></p>
-<p><span></span></p>
-<h1>file</h1>
-<p></p>
 <p></p>
 <h1><span>experience</span></h1>
 <p><span></span></p>
